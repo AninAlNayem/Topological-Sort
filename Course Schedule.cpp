@@ -12,7 +12,8 @@ void toposort(){
    while(!Q.empty()){
      int u=Q.front();
      Q.pop();
-     order.push_back(u);cnt++;
+     order.push_back(u);
+     cnt++;
      for(int i=0;i<G[u].size();i++){
         int node=G[u][i];
         indig[node]--;
